@@ -1,0 +1,33 @@
+# Supergun
+
+A [Supergun](https://en.wikipedia.org/wiki/SuperGun) is a device that enables, by way of various signal conversions and convienience connectors, an arcade game board to be conviently and safely played using consumer home equipment. Most often these are designed to be used with boards that support the [JAMMA](https://en.wikipedia.org/wiki/Japan_Amusement_Machine_and_Marketing_Association) connector standard.
+
+There are three issues with trying to naively wire up the JAMMA outputs to your home equipment. First, JAMMA audio and video signals are atuned to the needs of an arcade cabinet. Both signals are amplified to drive arcade monitors and internal speakers. Second, the controls of an production arcade cabinet are usually tailored to that specific cabinet with a big ol mess of wires called a "Harness" or a "Loom". While perfect for routing control signals all over a big wood box, this mess proves challenging on your living room floor. Most superguns attempt to solve this by offering some sort of standard controller connections, quite often using the pinout of the NeoGeo controller since it has room for most of the required buttons.
+
+# This Project
+
+With this project I want to demonstrate the simplicity of a Supergun device by building up the device one component at a time. Other than power a supergun only has three components:
+
+* [Audio line output converter](https://github.com/aconbere/Line-Converter)
+* [Video amplifier](https://github.com/aconbere/Video-Amplifier)
+* [IO Multiplexer](https://github.com/aconbere/IO-Multiplexer)
+
+I've built each of these components in KiCad and offer up the full design in a developer friendly license. Eventually I plan to relesase an all in one board. But for now my hope is that from these components other people can mix and match the pieces, improve the design, and share new creations.
+
+# Current State
+
+So far I've had the Audio Line Output Converter and the Video Amplifier boards fabbed and assembled. Both are tested as working. The IO Multiplexer needs more work but I expect that to be complete October 2020.
+
+# How to build
+
+Each projects contains a `.pcb` and a `.bom` file. The pcb files defines the board geometry and traces and popular fabricator Oshpark offers the ability to submit the `.pcb` file directly to them for manufacturing. The BOM file or "Bill of Materials" lists a suggested set of parts and links to buy those parts on mouser.com (correct at time of publishing). I will be working to write up assembly instructions for each board, but for now I'd assume that you might need to message me for details.
+
+# Contributing
+
+Honestly, I have no experience managing KiCad projects in an opensource community. I can tell from my edits that there can be a large blast radius in a diff from a small observable change. This is something we'll have to work through together. If you have changes you'd like to see, make a PR and we'll work through it together.
+
+# Other designs
+
+* http://hacks.slashdirt.org/hw/supergun/
+* https://www.retrorgb.com/minigun-supergun-an-open-source-arcade-supergun.html
+
