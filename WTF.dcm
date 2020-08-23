@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP Transformer_1P_SS_2T
-D Transformer, single primary, split secondary
-K transformer coil magnet
-F ~
-$ENDCMP
-#
-#End Doc Library
